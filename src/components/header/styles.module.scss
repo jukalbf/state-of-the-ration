@@ -1,0 +1,52 @@
+.headerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--border-light-mode);
+
+  .modes {
+    display: flex;
+    gap: 0.6rem;
+
+    .mode {
+      padding: 0.4rem;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icons {
+      width: 1.6rem;
+      height: fit-content;
+      object-fit: contain;
+    }
+
+    .lightModeContainer {
+      color: white;
+      transition: all 0.2s ease-in-out;
+      border-radius: 0.4rem;
+    }
+
+    .darkModeContainer {
+      color: black;
+      transition: all 0.2s ease-in-out;
+      border-radius: 0.4rem;
+    }
+
+    .lightModeContainer.selected {
+      background-color: white;
+      //border-top: 2px solid black;
+      color: black;
+    }
+
+    .darkModeContainer.selected {
+      background-color: black;
+      //border-top: 2px solid white;
+      color: white;
+    }
+  }
+}
