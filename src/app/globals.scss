@@ -1,3 +1,21 @@
+:root {
+  --border-light-mode: #9e9e9e;
+
+  // Light mode colors
+  --light-green: #186319;
+  --light-yellow: #7d711c;
+  --light-red: #7d311c;
+  --list-element-light: #787beb;
+  --list-element-light-border: #5456ab;
+
+  // Dark mode colors
+  --dark-green: #3cc33e;
+  --dark-yellow: #c3ba3c;
+  --dark-red: #c34e3c;
+  --list-element-dark: #111224;
+  --list-element-dark-border: #6e70d9;
+}
+
 html {
   font-size: 14px;
 }
@@ -6,12 +24,27 @@ html {
   padding: 0;
   margin: 0;
   font-family: var(--font-red-hat-display), "sans-serif";
-  color: white;
 }
 
 body,
 html {
-  background-color: #191919;
+  background-color: #d6d6d6;
   width: 100%;
   height: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
 }
