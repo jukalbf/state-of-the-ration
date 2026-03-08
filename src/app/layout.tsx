@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Red_Hat_Display } from "next/font/google";
 import "./globals.scss";
+import Header from "@/components/header";
 
 const redHatDisplay = Red_Hat_Display({
   variable: "--font-red-hat-display",
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${redHatDisplay.variable}`}>{children}</body>
+      <body className={`${redHatDisplay.variable}`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
